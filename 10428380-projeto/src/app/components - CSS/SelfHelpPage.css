@@ -1,0 +1,58 @@
+/* HelpPage */
+.selfhelp-container {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-container {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555555;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.labelquiz {
+  display: block;
+  padding: 8px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+label:hover {
+  background-color: #efefef;
+}
+
+.botaoquiz {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.botaoquiz:hover {
+  background-color: #025F83;
+}
+
+.messageafter {
+  font-size: 20px;
+  background-color: #025F83;
+  border-radius: 5px;
+  padding: 10px;
+}

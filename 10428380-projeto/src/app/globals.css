@@ -1,0 +1,561 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #74baf7;
+  padding-bottom: 150px;
+  padding-top: 90px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #025F83;
+  color: #ecf0f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.navbar-logo{
+  margin-left: auto; 
+  max-height: 90px; 
+  padding: 5px; 
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.menu li {
+  padding: 10px 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.menu li:hover,
+.menu li.active {
+  background-color: #5597e2;
+}
+
+.menu li.active {
+  border-bottom: 3px solid white;
+}
+
+.findacenter{
+  color: white;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.content {
+  padding-top: 80px;
+}
+
+.column-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 0px;
+  flex: 0 0 48%;
+  margin-top: 50px;
+}
+
+.column-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 0 48%;
+  margin-top: 50px;
+}
+
+.boxHP:hover, .boxIeD:hover, .box:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
+  transform: scale(1.02); 
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+
+/* Footer */
+.footer {
+  background-color: #025F83;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 100;
+}
+
+.footer p {
+  margin: 0;
+  padding: 3px;
+}
+
+.leftfooter,
+.rightfooter {
+  margin: 0 25px;
+}
+
+/* HomePage - Css */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 670px;
+}
+
+.row-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.boxHP {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+}
+
+.boxHP h2 {
+  margin-top: 0;
+}
+
+.boxHP p {
+  margin-bottom: 10px;
+}
+
+.boxHP button, .boxIeD button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boxHP button:hover {
+  background-color: #0056b3;
+}
+
+.inicial {
+  color: #025F83;
+  margin: 0 auto;
+  display: block;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.boxHP,
+.boxIeD,
+.selfhelp-container,
+.formulary-container {
+  background-color:white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  color: #025F83;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* FormularyPage */
+.formulary-container,
+.selfhelp-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #5597e2;
+  color: white;
+}
+
+.formulary-title,
+.selfhelp-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #025F83;
+}
+
+/* HelpPage */
+.selfhelp-container {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-container {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555555;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.labelquiz {
+  display: block;
+  padding: 8px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+label:hover {
+  background-color: #efefef;
+}
+
+.botaoquiz {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.botaoquiz:hover {
+  background-color: #025F83;
+}
+
+.messageafter {
+  font-size: 20px;
+  background-color: #025F83;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.testimony {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.test {
+  color: #025F83;
+  font-size: 20px;
+}
+
+/* MediaQuery */
+@media only screen and (max-width: 768px) {
+  body {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    padding: 10px 0;
+  }
+
+  .content {
+    padding-top: 180px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .perfil,
+  .timeline,
+  .inicial,
+  .settings,
+  .selfhelp,
+  .selfhelp-container {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .home-container,
+  .boxHP,
+  .boxIeD,
+  .formulary-container,
+  .selfhelp-container {
+    padding: 15px;
+  }
+
+  h1.inicial {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .question-container {
+    margin-bottom: 15px;
+  }
+
+  .botaoquiz {
+    margin-top: 15px;
+  }
+
+  .messageafter {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .testimony {
+    font-size: 30px;
+  }
+
+  .test {
+    font-size: 18px;
+  }
+}
+
+/* CSS TestimonyPage */
+.column {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
+  padding: 20px;
+  color: black;
+  width: 1800px;
+}
+
+.heartsandstars {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* MediaQuery */
+@media only screen and (max-width: 768px) {
+
+  .column {
+    padding: 0 10px;
+  }
+
+  .box {
+    padding: 15px;
+  }
+}
+
+
+
+/* I e D */
+.ied-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 1670px;
+}
+
+.breja {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.drogas {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.problemas {
+  width: 41.85%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-testimony {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.add-testimony h2 {
+  margin-bottom: 10px;
+}
+
+.add-testimony input,
+.add-testimony textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-testimony button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-testimony button:hover {
+  background-color: #45a049;
+}
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.box-text {
+  margin-top: 10px;
+}
+
+.delete-button {
+  background-color: #ff2600;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 8px;
+  }
+
+  .navbar-logo {
+    max-height: 60px;
+    padding: 5px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    padding: 8px 0;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}
+
+.content {
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    width: calc(100% - 20px); 
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+}
